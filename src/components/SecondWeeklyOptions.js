@@ -13,9 +13,10 @@ export class WeeklyOptions extends Component {
         <div>
             <h1> Second Weekly Options</h1>
             <h3>Choose Color:</h3>
-                <label htmlFor='options'>What color do you want your weekly envelopes to be?</label>
+               
                 <br></br>
                 <select>
+                    <option></option>
                     <option>None-White</option>
                     <option>Light Blue Border</option>
                     <option>Medium Blue Border</option>
@@ -36,9 +37,10 @@ export class WeeklyOptions extends Component {
                     <option>Gray Background</option>
                 </select>
             <h3>Choose Date Format:</h3>
-            <label htmlFor='options'>What date format would you like for your weekly envelopes?</label>
+            
             <br></br>
                 <select>
+                    <option></option>
                     <option>None-No Date</option>
                     <option>Month Day Year</option>
                     <option>Month Year</option>

@@ -1,13 +1,14 @@
 
 import './App.css';
-import { AccountForm } from './components/AccountForm';
+import StepWizard from "react-step-wizard";
 import Nav from './components/Nav';
+import { Wizard } from './components/Wizard';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <AccountForm />
+      <Wizard />
     </div>
   );
 }

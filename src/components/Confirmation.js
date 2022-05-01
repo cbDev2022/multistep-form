@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SchdulePage from './SchedulePage';
 
 export class Review extends Component {
     continue = e => {
@@ -18,7 +19,7 @@ export class Review extends Component {
         <div>
         <h1>Your schedule has been submitted!</h1>
         <div className="footer">
-                <button onClick={this.restart}>OK</button>
+                <button onClick={<SchdulePage/>}>OK</button>
             </div>
     </div>
     )

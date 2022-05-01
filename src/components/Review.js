@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-
+import React, { Component, Fragment, useCallback, useState } from 'react';
 export class Review extends Component {
     continue = e => {
         e.preventDefault();
@@ -13,7 +12,46 @@ export class Review extends Component {
     return (
         <div>
         <h1>Review your schedule</h1>
-        Schedule shows here
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Date Format</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Weekly</td>
+                    <td>January 2 2022</td>
+                    <td>MDY</td>
+                    <td>White</td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>January 2 2022</td>
+                    <td>MDY</td>
+                    <td>White</td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>January 2 2022</td>
+                    <td>MDY</td>
+                    <td>White</td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>January 2 2022</td>
+                    <td>MDY</td>
+                    <td>White</td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+
         <h1>Add additional information in the comments:</h1>
         <input placeholder="Comments" type="text" name="account" required autoComplete='off' />
         <h3>When you're finished, click "Submit"</h3>

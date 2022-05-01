@@ -13,7 +13,7 @@ export class WeeklyOptions extends Component {
         <div>
             <h1>Weekly Options</h1>
             <h3>Choose Color:</h3>
-                <label htmlFor='options'>What color do you want your weekly envelopes to be?</label>
+               
                 <br></br>
                 <select>
                     <option>None-White</option>
@@ -37,7 +37,7 @@ export class WeeklyOptions extends Component {
                 </select>
                 <p>*Series have their own colored borders</p>
             <h3>Choose Date Format:</h3>
-            <label htmlFor='options'>What date format would you like for your weekly envelopes?</label>
+            
             <br></br>
                 <select>
                     <option>None-No Date</option>
@@ -50,7 +50,7 @@ export class WeeklyOptions extends Component {
                     <option>Liturgical</option>
                 </select>
             <h3>Choose Envelope Series:</h3>
-            <label htmlFor='options'>What free series would you like to add to your weekly envelopes?</label>
+            
             <br></br>
                 <select>
                     <option>None</option>

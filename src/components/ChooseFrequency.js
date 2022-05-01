@@ -5,17 +5,6 @@ export class ChooseFrequency extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
-
-    back = e => {
-        e.preventDefault();
-        this.props.prevStep();
-    }
-
-    skip = e => {
-        e.preventDefault();
-        this.props.skip1();
-    }
-  
     
     render() {
         const { values } = this.props;
@@ -25,14 +14,16 @@ export class ChooseFrequency extends Component {
         <div>
         <h1>When is this schedule for?</h1>
          <h3>Choose Start Year</h3>
-         <label htmlFor='options'>What Year Will Your Mailing Begin?</label>
+         
          <select>
+             <option></option>
              <option>2022</option>
              <option>2023</option>
          </select>
          <h3>Choose Frequency</h3>
-         <label htmlFor='options'>Choose Your Mailing Frequency:</label>
+         
          <select>
+            <option></option>
              <option>Annual</option>
              <option>Semi-Annual</option>
              <option>Quarterly</option>
@@ -40,8 +31,9 @@ export class ChooseFrequency extends Component {
              <option>Monthly</option>
          </select>
          <h3>Choose Start Month</h3>
-         <label htmlFor='options'>Choose Your Mailing Frequency:</label>
+        
          <select>
+            <option></option>
              <option>January</option>
              <option>February</option>
              <option>March</option>
@@ -55,6 +47,11 @@ export class ChooseFrequency extends Component {
              <option>November</option>
              <option>December</option>
          </select>
+
+         <div>
+                <h2>When you are finished, click "Next"</h2>
+            </div>
+            
         <div className="footer">
                 <button onClick={this.continue}>Next</button>
             </div>
