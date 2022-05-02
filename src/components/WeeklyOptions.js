@@ -16,6 +16,7 @@ export class WeeklyOptions extends Component {
                
                 <br></br>
                 <select>
+                    <option></option>
                     <option>None-White</option>
                     <option>Light Blue Border</option>
                     <option>Medium Blue Border</option>
@@ -40,6 +41,7 @@ export class WeeklyOptions extends Component {
             
             <br></br>
                 <select>
+                    <option></option>
                     <option>None-No Date</option>
                     <option>Month Day Year</option>
                     <option>Month Year</option>
@@ -53,6 +55,7 @@ export class WeeklyOptions extends Component {
             
             <br></br>
                 <select>
+                    <option></option>
                     <option>None</option>
                     <option>St. Teresa</option>
                     <option>I Feel Good</option>

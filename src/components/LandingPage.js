@@ -18,13 +18,14 @@ export class LandingPage extends Component {
     
     return (
         <div>
+            <h1>Enter an account number</h1>
             <input
             type="text" 
             required="required" 
             placeholder="Enter Account Number"
             autoComplete='off'>
             </input>
-            <div className="footer">
+                <div className="footer">
                     <button onClick={this.continue}>Submit</button>
                 </div>
         </div>

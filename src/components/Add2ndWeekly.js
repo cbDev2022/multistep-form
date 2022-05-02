@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React, { Component } from 'react'
 
 export class Add2ndWeekly extends Component {
@@ -5,6 +6,7 @@ export class Add2ndWeekly extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
+
     
     render() {
         const { values } = this.props;
@@ -30,13 +32,15 @@ export class Add2ndWeekly extends Component {
           "May 8, 2022"
         ];
       return (
-          <div>
-              <h1>Uncheck any 2nd weeklies you want to REMOVE from this schedule.</h1>
+          <div class="center-align">
+              <h1>Second Weekly Collection</h1>
+              <h3>Uncheck any 2nd weeklies you want to REMOVE from this schedule.</h3>
               <input placeholder="2nd Weekly" type="text" name="account" required autoComplete='off' />
-              <div>
+              <br></br>
+              <div class="left-align">
                   {dateList.map((item, index) => (
                       <div key={index}>
-                          <input value={item} type="checkbox" />
+                          <input class="space" value={item} type="checkbox" defaultChecked />
                           <span>{item}</span>
                       </div>
                   ))}

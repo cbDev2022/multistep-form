@@ -31,13 +31,15 @@ export class AddWeeklies extends Component {
          
       ];
     return (
-        <div>
-            <h1>Uncheck any weeklies you want to REMOVE from this schedule.</h1>
+        <div class="center-align">
+            <h1>Weekly Collection</h1>
+            <h3>Uncheck any weeklies you want to REMOVE from this schedule.</h3>
             <input placeholder="Weekly" type="text" required autoComplete='off' />
-            <div>
+            <br></br>
+            <div class="left-align">
                 {dateList.map((item, index) => (
                     <div key={index}>
-                        <input value={item} type="checkbox" defaultChecked/>
+                        <input class="space" value={item} type="checkbox" defaultChecked/>
                         <span>{item}</span>
                     </div>
                 ))}

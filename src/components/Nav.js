@@ -2,7 +2,7 @@ import React from "react";
 
 function Nav() {
     return (
-        <header>
+        <header class="nav">
             <h1>Schedule Builder</h1>
         </header>
     );

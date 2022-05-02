@@ -36,7 +36,45 @@
   form * {
   font-size: 12px;
   }
+
+  .center-align {
+    text-align: center;
+  }
+
+  .left-align {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .space {
+    margin: 7px 15px;
+  }
+
+  .comments {
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+  }
   
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    background-color: #800020;
+    color: white;
+    height: 100px;
+    padding-top: 15px;
+  }
+
+  .dropdown {
+    background-color: darkgrey;
+    color: white;
+    border-radius: 5px;
+  }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

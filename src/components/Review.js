@@ -53,7 +53,7 @@ export class Review extends Component {
         </form>
 
         <h1>Add additional information in the comments:</h1>
-        <input placeholder="Comments" type="text" name="account" required autoComplete='off' />
+        <textarea class="comments" placeholder="Comments" type="text" name="account" required autoComplete='off' />
         <h3>When you're finished, click "Submit"</h3>
         <div className="footer">
                 <button onClick={this.continue}>Submit</button>
