@@ -5,6 +5,11 @@ export class ChooseFrequency extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
+
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
     
     render() {
         const { values } = this.props;
@@ -53,6 +58,7 @@ export class ChooseFrequency extends Component {
             </div>
             
         <div className="footer">
+                <button class="back" onClick={this.previous}>Back</button>
                 <button onClick={this.continue}>Next</button>
             </div>
     </div>

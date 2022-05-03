@@ -5,6 +5,11 @@ export class Review extends Component {
         this.props.nextStep();
     }
     
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+
     render() {
         const { values } = this.props;
         
@@ -56,6 +61,7 @@ export class Review extends Component {
         <textarea class="comments" placeholder="Comments" type="text" name="account" required autoComplete='off' />
         <h3>When you're finished, click "Submit"</h3>
         <div className="footer">
+                <button class="back" onClick={this.previous}>Back</button>
                 <button onClick={this.continue}>Submit</button>
             </div>
     </div>

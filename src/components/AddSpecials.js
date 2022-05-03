@@ -8,6 +8,11 @@ export class AddSpecials extends Component {
         this.props.nextStep();
     }
 
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+
     constructor() {
         super()
         this.state=({
@@ -83,6 +88,7 @@ export class AddSpecials extends Component {
             </div>
 
         <div className="footer">
+                <button class="back" onClick={this.previous}>Back</button>
                 <button onClick={this.continue}>Next</button>
             </div>
     </div>

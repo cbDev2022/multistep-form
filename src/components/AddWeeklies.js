@@ -6,7 +6,11 @@ export class AddWeeklies extends Component {
         this.props.nextStep();
     }
 
-    
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+
   render() {
       const { values } = this.props;
       const dateList = [
@@ -32,7 +36,7 @@ export class AddWeeklies extends Component {
       ];
     return (
         <div class="center-align">
-            <h1>Weekly Collection</h1>
+            <h1>Add Weekly Collection</h1>
             <h3>Uncheck any weeklies you want to REMOVE from this schedule.</h3>
             <input placeholder="Weekly" type="text" required autoComplete='off' />
             <br></br>
@@ -48,6 +52,7 @@ export class AddWeeklies extends Component {
                 <h2>When you are finished, click "Next"</h2>
             </div>
             <div className="footer">
+                    <button class="back" onClick={this.previous}>Back</button>
                     <button onClick={this.continue}>Next</button>
                 </div>
         </div>

@@ -7,6 +7,10 @@ export class Add2ndWeekly extends Component {
         this.props.nextStep();
     }
 
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
     
     render() {
         const { values } = this.props;
@@ -33,7 +37,7 @@ export class Add2ndWeekly extends Component {
         ];
       return (
           <div class="center-align">
-              <h1>Second Weekly Collection</h1>
+              <h1>Add Second Weekly Collection</h1>
               <h3>Uncheck any 2nd weeklies you want to REMOVE from this schedule.</h3>
               <input placeholder="2nd Weekly" type="text" name="account" required autoComplete='off' />
               <br></br>
@@ -49,6 +53,7 @@ export class Add2ndWeekly extends Component {
                   <h2>When you are finished, click "Next"</h2>
               </div>
               <div className="footer">
+                      <button class="back" onClick={this.previous}>Back</button>
                       <button onClick={this.continue}>Next</button>
                   </div>
           </div>

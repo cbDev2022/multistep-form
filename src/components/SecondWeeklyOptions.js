@@ -6,12 +6,17 @@ export class WeeklyOptions extends Component {
         this.props.nextStep();
     }
 
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+
     
   render() {
       const { values } = this.props;
     return (
         <div>
-            <h1> Second Weekly Options</h1>
+            <h1>Select Second Weekly Design Options</h1>
             <h3>Choose Color:</h3>
                
                 <br></br>
@@ -54,6 +59,7 @@ export class WeeklyOptions extends Component {
                 <h2>When you are finished, click "Next"</h2>
             </div>
             <div className="footer">
+                    <button class="back" onClick={this.previous}>Back</button>
                     <button onClick={this.continue}>Next</button>
                 </div>
         </div>

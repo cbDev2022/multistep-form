@@ -6,6 +6,11 @@ export class AddMonthly extends Component {
         this.props.nextStep();
     }
     
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+    
     render() {
         const { values } = this.props;
         
@@ -13,7 +18,7 @@ export class AddMonthly extends Component {
     return (
         <div>
         <h1>Add Monthly Collections</h1>
-        <h3>Enter the title for each monthly collection and choose a selection from each dropdown menu.</h3>
+        <h3>Enter the title for each monthly collection and choose a selection from each corresponding dropdown menu.</h3>
         <input placeholder="Enter Title Here" type="text" required autoComplete='off' />
      
                 <select class="space dropdown">
@@ -473,6 +478,7 @@ export class AddMonthly extends Component {
             </div>
                 
         <div className="footer">
+                <button class="back" onClick={this.previous}>Back</button>
                 <button onClick={this.continue}>Next</button>
             </div>
     </div>

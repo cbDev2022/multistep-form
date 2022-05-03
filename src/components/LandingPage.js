@@ -11,6 +11,11 @@ export class LandingPage extends Component {
         this.props.onSubmit();
     }
     
+    previous = e => {
+        e.preventDefault();
+        this.props.previousStep();
+    }
+
     render() {
         const { values } = this.props;
         const { errors } = this.props;
